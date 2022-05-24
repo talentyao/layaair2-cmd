@@ -1,0 +1,11 @@
+{
+    "setting": {
+        "urlCheck": true,
+        "es6": false,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true
+    },
+    "appid": "tt3e5248efa1788841",
+    "projectname": "layaByteDanceTest"
+}

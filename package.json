@@ -1,0 +1,83 @@
+{
+  "_from": "layaair2-cmd",
+  "_id": "layaair2-cmd@1.6.15",
+  "_inBundle": false,
+  "_integrity": "sha512-/wJVHNxTGzTLlL7+i/lNUs9ouAyHZhiVNXQjt3ZPTcCNFurVICgmBUEqfn3HdDJlBnh3Kk7cFwpUgSJU+vjQzg==",
+  "_location": "/layaair2-cmd",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "layaair2-cmd",
+    "name": "layaair2-cmd",
+    "escapedName": "layaair2-cmd",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/layaair2-cmd/-/layaair2-cmd-1.6.15.tgz",
+  "_shasum": "f704532b94877edf234895af367d43b086807ad3",
+  "_spec": "layaair2-cmd",
+  "_where": "C:\\Users\\talen",
+  "author": {
+    "name": "kylin"
+  },
+  "bin": {
+    "layaair2-cmd": "layaair2-cmd.js"
+  },
+  "bundleDependencies": [
+    "browserify",
+    "gulp-jsonminify",
+    "tsify",
+    "gulp"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.3",
+    "commander": "^2.19.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-image": "^4.4.1",
+    "gulp-jsonminify": "^1.1.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-collector": "^1.3.1",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-uglify-es": "^1.0.4",
+    "iconv-lite": "^0.5.0",
+    "matched": "^4.0.0",
+    "request": "^2.85.0",
+    "require-dir": "^1.2.0",
+    "rollup": "^1.25.2",
+    "rollup-plugin-glsl": "^1.3.0",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "tsify": "^4.0.1",
+    "typescript": "^3.2.2",
+    "vinyl-source-stream": "^2.0.0",
+    "xmldom": "^0.3.0"
+  },
+  "deprecated": false,
+  "description": "layaair version 2 toolkit",
+  "keywords": [
+    "layaair",
+    "layacmd",
+    "layaair-cmd",
+    "layaair2-cmd"
+  ],
+  "license": "ISC",
+  "main": "layaair2-cmd.js",
+  "name": "layaair2-cmd",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.6.15"
+}

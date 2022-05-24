@@ -1,0 +1,11 @@
+{
+    "version": "1.0.0",
+    "appId": "biligameccb5b175591f86a4",
+    "deviceOrientation": "portrait",
+    "networkTimeout": {
+        "request": 5000,
+        "connectSocket": 5000,
+        "uploadFile": 5000,
+        "downloadFile": 5000
+     }
+}
