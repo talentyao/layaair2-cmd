@@ -22424,7 +22424,7 @@ var Laya = window.Laya = (function (window, document) {
 									code = CodeManager.getCacheCode(rPath, changeTime);
 									CodeManager.addViewMap(CodeManager.getCacheViewMap(rPath));
 								} else {
-									console.log("Export:", rPath);
+									//	console.log("Export:", rPath);
 									code = FileManager.readTxtFile(tFile);
 									tPageInfo["hasSpecial"] = CodeManager.isSpecialPageFile(code);
 									obj = ObjectTools.getObj(code);
@@ -32137,7 +32137,7 @@ var Laya = window.Laya = (function (window, document) {
 			var cdp;
 			cdp = CMDShell.childProcess.fork(filePath, cmd, option || {});
 			cdp.stdout.on('data', function (data) {
-				console.log('标准输出：' + data);
+				// console.log('标准输出：' + data);
 			});
 			cdp.stderr.on('data', function (data) {
 				console.log('标准错误输出：' + data);
