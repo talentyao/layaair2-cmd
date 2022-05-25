@@ -2,6 +2,7 @@
 const program = require('commander');
 const { spawn, fork, exec } = require("child_process");
 const path = require("path");
+const { exit } = require('process');
 
 program
     .option("-c, --config <configPlatform>", "Set the publishing platform name[web|wxgame|bdgame|xmgame|qqgame|oppogame|vivogame|biligame|Alipaygame|bytedancegame|hwgame|taobaominiapp|taobaowidget]")
