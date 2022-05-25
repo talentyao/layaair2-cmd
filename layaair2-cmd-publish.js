@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const program = require('commander');
-const { spawn ,fork ,exec } = require("child_process");
+const { spawn, fork, exec } = require("child_process");
 const path = require("path");
 
 program
@@ -10,8 +10,8 @@ program
 
 let jsonName = program.config ? `${program.config}.json` : "web.json";
 let projPath = program.workspace ? program.workspace : process.cwd();
-let gulpFilePath = path.join(projPath , ".laya","publish.js");
-let gulpDir = path.join(process.argv[1],"../node_modules","gulp/bin/gulp.js");
+let gulpFilePath = path.join(projPath, ".laya", "publish.js");
+let gulpDir = path.join(process.argv[1], "../node_modules", "gulp/bin/gulp.js");
 let cmd = [`--gulpfile=${gulpFilePath}`, `--config=${jsonName}`, "publish"];
 
 let _gulp = fork(gulpDir, cmd, {
@@ -28,4 +28,5 @@ _gulp.stderr.on('data', (data) => {
 
 _gulp.on('close', (code) => {
     console.log(`exit：${code}`);
+    exit(code);
 });
