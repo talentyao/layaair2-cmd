@@ -33704,6 +33704,7 @@ var Laya = window.Laya = (function (window, document) {
 	*@created 2018-2-27 下午4:31:06
 	*/
 	//class laya.ide.managers.CodeParserManager
+	var exitsSet = new Set();
 	var CodeParserManager = (function () {
 		function CodeParserManager() { }
 		__class(CodeParserManager, 'laya.ide.managers.CodeParserManager');
@@ -33717,7 +33718,10 @@ var Laya = window.Laya = (function (window, document) {
 			code = FileManager.readTxtFile(codePath);
 			desO = CodeParserTool.getDesOFromCode(code);
 			if (!desO.des || !desO.des.name) {
-				console.log("ScriptDescript not found:", codePath);
+				if (!exitsSet.has(codePath)) {
+					console.log("ScriptDescript not found:", codePath);
+					exitsSet.add(codePath);
+				}
 			} else {
 				desO.className = desO.des.name;
 			}
