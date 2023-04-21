@@ -30,5 +30,5 @@ _gulp.stderr.on('data', (data) => {
 
 _gulp.on('close', (code) => {
     console.log(`exit：${code}`);
-    exit(code);
+    exit(code ? code : -1);
 });
